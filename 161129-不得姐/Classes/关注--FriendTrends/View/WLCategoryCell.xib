@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="WLCategoryCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xFc-wT-df3" userLabel="左边线">
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="5" id="sTF-lJ-EeT"/>
+                        </constraints>
+                    </view>
+                    <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iXm-7p-SBm" userLabel="下划线">
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="zWf-Uy-b85"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xFc-wT-df3" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="9xl-fT-ewq"/>
+                    <constraint firstAttribute="bottom" secondItem="iXm-7p-SBm" secondAttribute="bottom" id="FJO-9w-LIy"/>
+                    <constraint firstAttribute="trailing" secondItem="iXm-7p-SBm" secondAttribute="trailing" id="cWe-Vy-Pxt"/>
+                    <constraint firstItem="iXm-7p-SBm" firstAttribute="leading" secondItem="xFc-wT-df3" secondAttribute="trailing" id="k3S-K7-Dh8"/>
+                    <constraint firstItem="xFc-wT-df3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="sDm-bW-5Er"/>
+                    <constraint firstItem="xFc-wT-df3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ziP-yW-vmh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="leftView" destination="xFc-wT-df3" id="HoX-pT-tEN"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

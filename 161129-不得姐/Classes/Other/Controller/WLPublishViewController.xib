@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WLPublishViewController">
+            <connections>
+                <outlet property="bgImageView" destination="Rxk-kv-iKs" id="fqQ-yz-ZPe"/>
+                <outlet property="sloganView" destination="H9b-5a-ePR" id="TcA-bl-1Ho"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shareBottomBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Rxk-kv-iKs" userLabel="背景图"/>
+                <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="app_sloganN" translatesAutoresizingMaskIntoConstraints="NO" id="H9b-5a-ePR" userLabel="APPslogan">
+                    <frame key="frameInset" minX="65" minY="83" width="245" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpj-Ui-Lil" userLabel="取消按钮">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="PhQ-M5-E4V"/>
+                    </constraints>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="1" green="0.15877665690000001" blue="0.14666310769999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="cancel:" destination="-1" eventType="touchUpInside" id="jAn-ON-LLO"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="fpj-Ui-Lil" secondAttribute="trailing" id="16x-U6-vdM"/>
+                <constraint firstItem="Rxk-kv-iKs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5FF-pl-A4g"/>
+                <constraint firstAttribute="bottom" secondItem="Rxk-kv-iKs" secondAttribute="bottom" id="Axp-OP-aY2"/>
+                <constraint firstAttribute="trailing" secondItem="Rxk-kv-iKs" secondAttribute="trailing" id="CYO-lT-UTb"/>
+                <constraint firstAttribute="bottom" secondItem="Rxk-kv-iKs" secondAttribute="bottom" id="HfH-1y-SFQ"/>
+                <constraint firstItem="Rxk-kv-iKs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Qbm-dv-VP2"/>
+                <constraint firstItem="fpj-Ui-Lil" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="aks-DV-kkf"/>
+                <constraint firstItem="Rxk-kv-iKs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cWR-M8-OJW"/>
+                <constraint firstAttribute="bottom" secondItem="fpj-Ui-Lil" secondAttribute="bottom" id="qLQ-vc-vu5"/>
+                <constraint firstAttribute="trailing" secondItem="Rxk-kv-iKs" secondAttribute="trailing" id="xza-Ls-mXd"/>
+                <constraint firstItem="Rxk-kv-iKs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="zE1-O3-Q6Q"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="25" y="1"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="app_sloganN" width="245" height="25"/>
+        <image name="shareBottomBackground" width="320" height="343"/>
+    </resources>
+</document>

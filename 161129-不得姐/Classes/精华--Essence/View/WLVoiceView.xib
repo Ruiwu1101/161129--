@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WLVoiceView">
+            <rect key="frame" x="0.0" y="0.0" width="426" height="236"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageBackground" translatesAutoresizingMaskIntoConstraints="NO" id="rhj-Dv-2Ul">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="Fkk-vj-ifV"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Eze-Ze-iV4"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dov-hl-xNV">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="asj-uW-wCa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.04208967349" green="1" blue="0.97914119379999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BwM-FQ-emq">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="63" id="IUN-dE-fAD"/>
+                        <constraint firstAttribute="height" constant="63" id="UYT-NO-wuC"/>
+                    </constraints>
+                    <state key="normal" image="playButtonPlay" backgroundImage="playButton"/>
+                    <state key="highlighted" backgroundImage="playButtonClick"/>
+                    <connections>
+                        <action selector="play:" destination="iN0-l3-epB" eventType="touchUpInside" id="dcV-km-Wrt"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mk1-0V-0Ix">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="5Yq-4I-PjG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.04208967349" green="1" blue="0.97914119379999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="BwM-FQ-emq" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="38h-HC-JEa"/>
+                <constraint firstItem="rhj-Dv-2Ul" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="3VN-tR-usP"/>
+                <constraint firstItem="BwM-FQ-emq" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="6Jy-81-LAY"/>
+                <constraint firstAttribute="trailing" secondItem="rhj-Dv-2Ul" secondAttribute="trailing" id="7L6-Wb-hSs"/>
+                <constraint firstAttribute="bottom" secondItem="mk1-0V-0Ix" secondAttribute="bottom" id="BtO-B5-TRE"/>
+                <constraint firstItem="rhj-Dv-2Ul" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ITj-oQ-Pdm"/>
+                <constraint firstAttribute="trailing" secondItem="dov-hl-xNV" secondAttribute="trailing" id="JaI-FK-zsc"/>
+                <constraint firstItem="Eze-Ze-iV4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Nyb-ma-Aef"/>
+                <constraint firstAttribute="bottom" secondItem="dov-hl-xNV" secondAttribute="bottom" id="dd5-YA-Cth"/>
+                <constraint firstAttribute="trailing" secondItem="Eze-Ze-iV4" secondAttribute="trailing" id="eMI-Vm-3yf"/>
+                <constraint firstAttribute="bottom" secondItem="Eze-Ze-iV4" secondAttribute="bottom" id="fZJ-5N-aOp"/>
+                <constraint firstItem="mk1-0V-0Ix" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="pTf-1E-5ba"/>
+                <constraint firstItem="Eze-Ze-iV4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xGo-rQ-5ai"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="playCountLabel" destination="mk1-0V-0Ix" id="oN4-2m-MRb"/>
+                <outlet property="voiceImage" destination="Eze-Ze-iV4" id="Vuz-IV-GDq"/>
+                <outlet property="voiceTimeLabel" destination="dov-hl-xNV" id="cO4-6y-cQ3"/>
+            </connections>
+            <point key="canvasLocation" x="-118" y="-349"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="imageBackground" width="75" height="15"/>
+        <image name="playButton" width="63" height="63"/>
+        <image name="playButtonClick" width="63" height="63"/>
+        <image name="playButtonPlay" width="30" height="30"/>
+    </resources>
+</document>
